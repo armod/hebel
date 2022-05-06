@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,500&display=swap');
+
+@font-face {
+    font-family: 'AlphaWood';
+    src: url(/fonts/alpha_wood/AlphaWood.ttf);
+}
+
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=11f0u0k00hO00++01si0L66lr8- */
+
+// Feel free to copy&paste color codes to your application */
+
+
+// As hex codes */
+
+$color-primary-0: #8E8E8E; // Main Primary color */
+$color-primary-1: #ffffff;
+$color-primary-2: #E1E1E1;
+$color-primary-3: #31302F;
+$color-primary-4: #443A17;
+
+
+
+// As RGBa codes */
+
+$rgba-primary-0: rgba(142, 142, 142, 1); // Main Primary color */
+$rgba-primary-1: rgba(255, 255, 255, 1);
+$rgba-primary-2: rgba(225, 225, 225, 1);
+$rgba-primary-3: rgba(49, 48, 47, 1);
+$rgba-primary-4: rgba(68, 58, 23, 1);
+
+
+body {
+    background-color: white
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo-male {
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0px 0px 0px rgb(70, 43, 8));
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #5f5f79;
+}
+
+/* h1 {
+    font-family: 'AlphaWood', sans-serif;
+    color: rgb(70, 43, 8);    
+    filter: drop-shadow(0px 10px 10px rgb(70, 43, 8));
+} */
+
+.nawigacja {
+    margin: 0;
+    /* width: 98%; */
+    /* background-color: $color-primary-0; */
+    /* position: relative; */
+    flex: 1;
+}
+
+#navbarResponsive {
+    justify-content: end;
+    flex-grow: 1;
+}
+
+.nav-links {
+    align-content: flex-end;
+    gap: 50px;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #5f5f79;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+    color: #9bee00;
+}
+
+.strug {
+    animation: strug 1.5s ease;
+}
+
+.l1 {
+    /*  */
+    padding-top: 10vh;
+}
+
+.l2 img {
+    filter: drop-shadow(10px 50px 15px rgb(0, 0, 0));
+}
+
+@keyframes strug {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.strzalka {
+    font-size: 2rem;
+    color: rgb(34, 34, 34);
+    animation: arrow 2.5s infinite linear;
+    margin-bottom: 0;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    /* 
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    } */
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    letter-spacing: .1rem;
+}
+
+.landing {
+    min-height: 80vh;
+    /* background-color: darkgrey; */
+    background-image: url(/img/floor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    filter: drop-shadow(10px 10px 10px black);
+    border-radius: 15px;
+}
+
+.landing .landTekst {
+    color: #000000;
+    padding: 8rem;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: justify;
+    filter: drop-shadow(3px 5px 4px rgb(70, 70, 70));
+    grid-column: auto;
+}
+
+
+#uslugi,
+#kontakt {
+    padding-top: 3rem;
+    min-height: 80vh;
+    background-image: url(/img/floor.jpg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kontakt {
+    margin-top: 0rem;
+    color: #9bee00;
+}
+
+@media (max-width: 768px) {
+    .landing .landTekst {
+        padding: 6rem;
+        font-size: 1em;
+    }
+
+    #uslugi {
+        background-repeat: repeat;
+        background-size: auto;
+    }
+}
+
+.l2 {
+    /* background-image: url('/img/wior.png'); */
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+}
+
+
+.landingText {
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 8rem;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), black);
+    background-clip: text;
+}
+
+@media (max-width: 992px) {
+    .landingText {
+        font-size: 4rem;
+    }
+
+    .landing .landTekst {
+        padding: 6rem;
+        font-size: 1.5em;
+    }
+}
+
+
+
+.card {
+    /* background: linear-gradient(rgb(199, 150, 15), rgb(63, 63, 62)); */
+    background-color: #d1e781;
+    background-image: url('/img/floor.jpg');
+    background-blend-mode: multiply;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+    filter: drop-shadow(10px 10px 6px rgb(0, 0, 0));
+    color: #000000;
+}
+
+.card-title {
+    color: #000000;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.card img {
+    filter: drop-shadow(5px 10px 5px rgb(0, 0, 0));
+    filter: contrast(130%);
+    transition: all .5s ease-out;
+}
+
+.card img:hover {
+    filter: contrast(200%);
+}
+
+.card-body {
+    min-height: 40vh;
+}
+
+.kontakt-img {
+    background-color: #31302f00;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+}
+
+.kontakt-form {
+    padding: 1rem;
+}
+
+.kontakt-img,
+.kontakt-form {
+    border: 2px solid rgba(255, 0, 0, 0);
+    /* margin: 10px; */
+    /* display: flex; */
+}
+
+.stopka{
+    text-align: center;
+    color: #9bee00;
+}

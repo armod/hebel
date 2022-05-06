@@ -1,0 +1,76 @@
+.logo {
+    /* display: flex; */
+    /* margin: 0;
+    padding: 0; */
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.logo p {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo .telefon {
+    font-size: 1.5rem;
+}
+
+.landingText {
+    /* position: relative; */
+    /* margin: 0;
+    padding: 0; */
+    font-weight: 900;
+    font-size: 6em;
+    text-transform: uppercase;
+    background-color: rgb(150, 112, 81);
+    background-image: url(/img/floor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    background-blend-mode: multiply;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
+}
+
+.telefon-icon {
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    animation: telefon 1s infinite;
+    /* animation: telefon 1s infinite cubic-bezier(0, -0.77, 1, 1.58); */
+}
+
+@keyframes telefon {
+    0% {
+        transform: rotateZ(20deg);
+    }
+
+    50% {
+        transform: rotateZ(-20deg);
+        color: green;
+    }
+
+    100% {
+        transform: rotateZ(20deg);
+    }
+}
+
+@media(max-width: 1200px) {
+    .landingText {
+        font-size: 5em;
+    }
+}
+
+@media(max-width: 992px) {
+    .landingText {
+        font-size: 3em;
+    }
+}
+
+@media(max-width: 768px) {
+    .landingText {
+        font-size: 4.5em;
+    }
+}

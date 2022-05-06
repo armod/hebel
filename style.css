@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,500&display=swap");
+@font-face {
+  font-family: 'AlphaWood';
+  src: url(/fonts/alpha_wood/AlphaWood.ttf);
+}
+
+body {
+  background-color: white;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo-male {
+  color: black;
+  -webkit-filter: drop-shadow(0px 0px 0px #462b08);
+          filter: drop-shadow(0px 0px 0px #462b08);
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #5f5f79;
+}
+
+/* h1 {
+    font-family: 'AlphaWood', sans-serif;
+    color: rgb(70, 43, 8);    
+    filter: drop-shadow(0px 10px 10px rgb(70, 43, 8));
+} */
+.nawigacja {
+  margin: 0;
+  /* width: 98%; */
+  /* background-color: $color-primary-0; */
+  /* position: relative; */
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#navbarResponsive {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav-links {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  gap: 50px;
+}
+
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #5f5f79;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+  color: #9bee00;
+}
+
+.strug {
+  -webkit-animation: strug 1.5s ease;
+          animation: strug 1.5s ease;
+}
+
+.l1 {
+  /*  */
+  padding-top: 10vh;
+}
+
+.l2 img {
+  -webkit-filter: drop-shadow(10px 50px 15px black);
+          filter: drop-shadow(10px 50px 15px black);
+}
+
+@-webkit-keyframes strug {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes strug {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.strzalka {
+  font-size: 2rem;
+  color: #222222;
+  -webkit-animation: arrow 2.5s infinite linear;
+          animation: arrow 2.5s infinite linear;
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  /* 
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    } */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  /* 
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    } */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  letter-spacing: .1rem;
+}
+
+.landing {
+  min-height: 80vh;
+  /* background-color: darkgrey; */
+  background-image: url(/img/floor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  -webkit-filter: drop-shadow(10px 10px 10px black);
+          filter: drop-shadow(10px 10px 10px black);
+  border-radius: 15px;
+}
+
+.landing .landTekst {
+  color: #000000;
+  padding: 8rem;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: justify;
+  -webkit-filter: drop-shadow(3px 5px 4px #464646);
+          filter: drop-shadow(3px 5px 4px #464646);
+  grid-column: auto;
+}
+
+#uslugi,
+#kontakt {
+  padding-top: 3rem;
+  min-height: 80vh;
+  background-image: url(/img/floor.jpg);
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kontakt {
+  margin-top: 0rem;
+  color: #9bee00;
+}
+
+@media (max-width: 768px) {
+  .landing .landTekst {
+    padding: 6rem;
+    font-size: 1em;
+  }
+  #uslugi {
+    background-repeat: repeat;
+    background-size: auto;
+  }
+}
+
+.l2 {
+  /* background-image: url('/img/wior.png'); */
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.landingText {
+  text-align: center;
+  padding-top: 6rem;
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(black), to(black));
+  background: linear-gradient(to right, black, black, black);
+  background-clip: text;
+}
+
+@media (max-width: 992px) {
+  .landingText {
+    font-size: 4rem;
+  }
+  .landing .landTekst {
+    padding: 6rem;
+    font-size: 1.5em;
+  }
+}
+
+.card {
+  /* background: linear-gradient(rgb(199, 150, 15), rgb(63, 63, 62)); */
+  background-color: #d1e781;
+  background-image: url("/img/floor.jpg");
+  background-blend-mode: multiply;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(10px 10px 6px black);
+          filter: drop-shadow(10px 10px 6px black);
+  color: #000000;
+}
+
+.card-title {
+  color: #000000;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.card img {
+  -webkit-filter: drop-shadow(5px 10px 5px black);
+          filter: drop-shadow(5px 10px 5px black);
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.card img:hover {
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
+}
+
+.card-body {
+  min-height: 40vh;
+}
+
+.kontakt-img {
+  background-color: #31302f00;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+.kontakt-form {
+  padding: 1rem;
+}
+
+.kontakt-img,
+.kontakt-form {
+  border: 2px solid rgba(255, 0, 0, 0);
+  /* margin: 10px; */
+  /* display: flex; */
+}
+
+.stopka {
+  text-align: center;
+  color: #9bee00;
+}
+/*# sourceMappingURL=style.css.map */
